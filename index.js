@@ -28,8 +28,16 @@ restService.post("/echo", function(req, res) {
 });
 
 restService.post("/audio", function(req, res) {
-  var speech = "";
-  //switch (req.body.result.parameters.statement_num) 
+  
+   var speech =
+    req.body.result &&
+    req.body.result.parameters &&
+    req.body.result.parameters.echoText
+      ? req.body.result.parameters.statement_num
+      : "Seems like some problem. Speak again.";
+  
+  //var speech = "";
+  switch (speech) 
   return res.json({
     //request: req.body.result.parameters.statement_num,
     speech: speech,
