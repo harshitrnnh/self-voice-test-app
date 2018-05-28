@@ -29,22 +29,19 @@ restService.post("/echo", function(req, res) {
 
 restService.post("/audio", function(req, res) {
   var speech = "";
-  switch (req.body.result.parameters.statement_num) {
+  switch (req.body.result.parameters.statement_num.toLowerCase()) {
     //Speech Synthesis Markup Language 
     case "one":
       speech = 'one';
       break;
     case "two":
       speech = 'two';
-        //'<speak><audio repeatCount="2" src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/2.wav">did not get your audio file</audio></speak>';
       break;
     case "three":
       speech = 'three';
-        //'<speak><audio repeatCount="2" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
       break;
     case "four":
       speech = 'four';
-        //'<speak><audio speed="200%" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
       break;
   }
   return res.json({
