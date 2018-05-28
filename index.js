@@ -28,22 +28,12 @@ restService.post("/echo", function(req, res) {
 });
 
 restService.post("/audio", function(req, res) {
-  var speech = "";
-  switch (req.body.result.parameters.statement_num.toLowerCase()) {
-    //Speech Synthesis Markup Language 
-    case "one":
-      speech = 'one';
-      break;
-    case "two":
-      speech = 'two';
-      break;
-    case "three":
-      speech = 'three';
-      break;
-    case "four":
-      speech = 'four';
-      break;
-  }
+  var speech =
+    req.body.result &&
+    req.body.result.parameters &&
+    req.body.result.parameters.statement_num
+      ? req.body.result.parameters.statement_num
+      : "Seems like some problem. Speak again.";
   return res.json({
     speech: speech,
     displayText: speech,
