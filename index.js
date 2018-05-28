@@ -32,20 +32,19 @@ restService.post("/audio", function(req, res) {
   switch (req.body.result.parameters.statement_num) {
     //Speech Synthesis Markup Language 
     case "one":
-      speech =
-        '<speak><audio src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/1.wav">did not get your audio file</audio></speak>';
+      speech = 'one';
       break;
     case "two":
-      speech =
-        '<speak><audio repeatCount="2" src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/2.wav">did not get your audio file</audio></speak>';
+      speech = 'two';
+        //'<speak><audio repeatCount="2" src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/2.wav">did not get your audio file</audio></speak>';
       break;
     case "three":
-      speech =
-        '<speak><audio repeatCount="2" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
+      speech = 'three';
+        //'<speak><audio repeatCount="2" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
       break;
     case "four":
-      speech =
-        '<speak><audio speed="200%" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
+      speech = 'four';
+        //'<speak><audio speed="200%" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
       break;
   }
   return res.json({
