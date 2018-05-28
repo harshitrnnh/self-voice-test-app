@@ -35,11 +35,11 @@ restService.post("/audio", function(req, res) {
     req.body.result.parameters.echoText
       ? req.body.result.parameters.statement_num
       : "Seems like some problem. Speak again.";
-  var speech_str = speech.toString();
+  //var speech_str = speech.toString();
   //var speech = "";
   //switch (speech) 
   return res.json({
-    speech: speech_str,
+    speech: speech,
     displayText: speech,
     source: "dialog-flow-test-self-voice"
   });
