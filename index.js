@@ -28,16 +28,26 @@ restService.post("/echo", function(req, res) {
 });
 
 restService.post("/audio", function(req, res) {
-  
-   var speech =
-    req.body.result &&
-    req.body.result.parameters &&
-    req.body.result.parameters.echoText
-      ? req.body.result.parameters.statement_num
-      : "Seems like some problem. Speak again.";
-  //var speech_str = speech.toString();
-  //var speech = "";
-  //switch (speech) 
+  var speech = "";
+  switch (req.body.result.parameters.statement_num) {
+    //Speech Synthesis Markup Language 
+    case "one":
+      speech =
+        '<speak><audio src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/1.wav">did not get your audio file</audio></speak>';
+      break;
+    case "two":
+      speech =
+        '<speak><audio repeatCount="2" src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/2.wav">did not get your audio file</audio></speak>';
+      break;
+    case "three":
+      speech =
+        '<speak><audio repeatCount="2" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
+      break;
+    case "four":
+      speech =
+        '<speak><audio speed="200%" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
+      break;
+  }
   return res.json({
     speech: speech,
     displayText: speech,
