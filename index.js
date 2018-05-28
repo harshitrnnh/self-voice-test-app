@@ -29,29 +29,9 @@ restService.post("/echo", function(req, res) {
 
 restService.post("/audio", function(req, res) {
   var speech = "";
-  switch (req.body.result.parameters.statement_num) {
-    //Speech Synthesis Markup Language 
-    case "1":
-      speech =
-        '<speak><audio src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/1.wav">did not get your audio file</audio></speak>';
-      break;
-    case "2":
-      speech =
-        '<speak><audio repeatCount="2" src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/2.wav">did not get your audio file</audio></speak>';
-      break;
-    case "3":
-      speech =
-        '<speak><audio repeatCount="2" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
-      break;
-    case "4":
-      speech =
-        '<speak><audio speed="200%" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
-      break;
-     default:
-      speech = 
-        '<speak><audio speed="200%" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
-  }
+  //switch (req.body.result.parameters.statement_num) 
   return res.json({
+    request: req.body.result.parameters.statement_num,
     speech: speech,
     displayText: speech,
     source: "webhook-echo-sample"
