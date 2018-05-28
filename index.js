@@ -23,7 +23,7 @@ restService.post("/echo", function(req, res) {
   return res.json({
     speech: speech,
     displayText: speech,
-    source: "webhook-echo-sample"
+    source: "dialog-flow-test-self-voice"
   });
 });
 
@@ -42,7 +42,7 @@ restService.post("/audio", function(req, res) {
     //request: req.body.result.parameters.statement_num,
     speech: speech,
     displayText: speech,
-    source: "webhook-echo-sample"
+    source: "dialog-flow-test-self-voice"
   });
 });
 
