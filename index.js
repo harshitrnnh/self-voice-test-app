@@ -47,6 +47,9 @@ restService.post("/audio", function(req, res) {
       speech =
         '<speak><audio speed="200%" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
       break;
+     default:
+      speech = 
+        '<speak><audio speed="200%" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
   }
   return res.json({
     speech: speech,
