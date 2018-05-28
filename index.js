@@ -33,15 +33,15 @@ restService.post("/audio", function(req, res) {
     //Speech Synthesis Markup Language 
     case "1":
       speech =
-        '<speak><audio src="https://www.dropbox.com/s/rg7sbq71mgd7c2k/0_20180505_deepvoice3_checkpoint_step000640000.wav?dl=0">did not get your audio file</audio></speak>';
+        '<speak><audio src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/1.wav">did not get your audio file</audio></speak>';
       break;
     case "2":
       speech =
-        '<speak><audio clipBegin="1s" clipEnd="3s" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
+        '<speak><audio repeatCount="2" src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/2.wav">did not get your audio file</audio></speak>';
       break;
     case "3":
       speech =
-        '<speak><audio repeatCount="2" soundLevel="-15db" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
+        '<speak><audio repeatCount="2" src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio></speak>';
       break;
     case "4":
       speech =
