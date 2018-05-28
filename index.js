@@ -31,7 +31,7 @@ restService.post("/audio", function(req, res) {
   var speech = "";
   //switch (req.body.result.parameters.statement_num) 
   return res.json({
-    request: req.body.result.parameters.statement_num,
+    //request: req.body.result.parameters.statement_num,
     speech: speech,
     displayText: speech,
     source: "webhook-echo-sample"
