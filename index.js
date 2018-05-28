@@ -37,7 +37,7 @@ restService.post("/audio", function(req, res) {
       : "Seems like some problem. Speak again.";
   
   //var speech = "";
-  switch (speech) 
+  //switch (speech) 
   return res.json({
     //request: req.body.result.parameters.statement_num,
     speech: speech,
