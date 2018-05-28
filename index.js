@@ -39,7 +39,6 @@ restService.post("/audio", function(req, res) {
   //var speech = "";
   //switch (speech) 
   return res.json({
-    //request: req.body.result.parameters.statement_num,
     speech: speech_str,
     displayText: speech,
     source: "dialog-flow-test-self-voice"
