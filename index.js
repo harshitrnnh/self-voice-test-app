@@ -42,19 +42,19 @@ restService.post("/audio", function(req, res) {
   var speech = "";
   switch (req.body.queryResult.parameters.statement_num) {
     //Speech Synthesis Markup Language 
-    case "one":
+    case "1":
       speech =
         '<audio src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/1.wav">did not get your audio file</audio>';
       break;
-     case "two":
+     case "2":
       speech =
         '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
       break;
-          case "three":
+          case "3":
       speech =
         '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
       break;
-          case "four":
+          case "4":
       speech =
         '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
       break;
