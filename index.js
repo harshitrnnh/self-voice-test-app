@@ -40,25 +40,27 @@ restService.post("/echo", function(req, res) {
 restService.post("/audio", function(req, res) {
   //var speech = req.body.queryResult.parameters.statement_num
   var speech = "";
-  switch (req.body.queryResult.parameters.statement_num) {
-    //Speech Synthesis Markup Language 
-    case "1":
-      speech = "found one";
-        //'<audio src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/1.wav">did not get your audio file</audio>';
-      break;
-     case "2":
-      speech =
-        '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
-      break;
-          case "3":
-      speech =
-        '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
-      break;
-          case "4":
-      speech =
-        '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
-      break;
-  } 
+  var param = req.body.queryResult.parameters.statement_num;
+  if (param == "1"){speech = "found one";}
+//   switch (req.body.queryResult.parameters.statement_num) {
+//     //Speech Synthesis Markup Language 
+//     case "1":
+//       speech = "found one";
+//         //'<audio src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/1.wav">did not get your audio file</audio>';
+//       break;
+//      case "2":
+//       speech =
+//         '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
+//       break;
+//           case "3":
+//       speech =
+//         '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
+//       break;
+//           case "4":
+//       speech =
+//         '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
+//       break;
+//   } 
   let responseObj={
      "fulfillmentText":speech
     ,"fulfillmentMessages":[
