@@ -20,12 +20,27 @@ restService.post("/echo", function(req, res) {
     req.body.result.parameters.echoText
       ? req.body.result.parameters.echoText
       : "Seems like some problem. Speak again.";
-  return res.json({
-    speech: speech,
-    displayText: speech,
-    source: "dialog-flow-test-self-voice"
-  });
-});
+  let responseObj={
+     "fulfillmentText":speech
+    ,"fulfillmentMessages":[
+        {
+            "text": {
+                "text": [
+                    "Hello I m Responding to intent"
+                ]
+            }
+        }
+    ]
+    ,"source":""
+}
+  return res.json(responseObj);});
+
+//   return res.json({
+//     speech: speech,
+//     displayText: speech,
+//     source: "dialog-flow-test-self-voice"
+//   });
+// });
 
 restService.post("/audio", function(req, res) {
   var speech =
