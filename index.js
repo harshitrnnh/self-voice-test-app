@@ -26,7 +26,7 @@ restService.post("/echo", function(req, res) {
         {
             "text": {
                 "text": [
-                    "Hello I m Responding to intent"
+                    speech
                 ]
             }
         }
