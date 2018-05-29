@@ -38,18 +38,59 @@ restService.post("/echo", function(req, res) {
 // });
 
 restService.post("/audio", function(req, res) {
-  var speech =
-    req.body.result &&
-    req.body.result.parameters &&
-    req.body.result.parameters.statement_num
-      ? req.body.result.parameters.statement_num
-      : "Seems like some problem. Speak again.";
-  return res.json({
-    speech: speech,
-    displayText: speech,
-    source: "dialog-flow-test-self-voice"
-  });
-});
+  //var speech = req.body.queryResult.parameters.statement_num
+  var speech = "";
+  switch (req.body.queryResult.parameters.statement_num) {
+    //Speech Synthesis Markup Language 
+    case "one":
+      speech =
+        '<audio src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/1.wav">did not get your audio file</audio>';
+      break;
+     case "two":
+      speech =
+        '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
+      break;
+          case "three":
+      speech =
+        '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
+      break;
+          case "four":
+      speech =
+        '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
+      break;
+      
+      let responseObj={
+  "payload": {
+    "google": {
+      "expectUserResponse": true,
+      "richResponse": {
+        "items": [
+          {
+            "simpleResponse": {
+              "ssml": speech,
+              "displayText": "This is a SSML sample. Make sure your sound is enabled to hear the demo"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+      
+//         let responseObj={
+//      "fulfillmentText":speech
+//     ,"fulfillmentMessages":[
+//         {
+//             "text": {
+//                 "text": [
+//                     speech
+//                 ]
+//             }
+//         }
+//     ]
+//     ,"source":""
+// }
+  return res.json(responseObj);});
 
 restService.post("/video", function(req, res) {
   return res.json({
