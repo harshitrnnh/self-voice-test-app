@@ -14,7 +14,7 @@ restService.use(
 restService.use(bodyParser.json());
 
 restService.post("/echo", function(req, res) {
-  var speech = req.body.queryResult.parameters.echoText
+  var speech = req.body.queryResult.parameters.statement_num
   let responseObj={
      "fulfillmentText":speech
     ,"fulfillmentMessages":[
