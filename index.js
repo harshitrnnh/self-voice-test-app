@@ -46,7 +46,6 @@ restService.post("/audio", function(req, res) {
     //Speech Synthesis Markup Language 
     case "1":
       speech = "<speak><audio src=“https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/1.wav”>didn’t get your MP3 audio file</audio></speak>;
-        //'<audio src="https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/1.wav">did not get your audio file</audio>';
       break;
      case "2":
       speech =
