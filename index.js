@@ -46,21 +46,10 @@ restService.post("/audio", function(req, res) {
   
  let responseObj={
    
-  "payload": {
-    "google": {
-      "richResponse": {
-        "items": [
-          {
-            "simpleResponse": {
+
               "ssml":speech,
               "displayText": "This is a SSML sample. Make sure your sound is enabled to hear the demo"
             }
-          }
-        ]
-      }
-    }
-  }
-}
 
  return res.json(responseObj);});
 
