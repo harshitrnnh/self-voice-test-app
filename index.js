@@ -45,34 +45,10 @@ restService.post("/audio", function(req, res) {
   switch (req.body.queryResult.parameters.statement_num) {
     //Speech Synthesis Markup Language 
     case "1":
-      speech = "<speak><audio src=“https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/1.wav”>didn’t get your MP3 audio file</audio></speak>;
-      break;
-     case "2":
-      speech =
-        '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
-      break;
-          case "3":
-      speech =
-        '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
-      break;
-          case "4":
-      speech =
-        '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
+      speech = 
+        "<speak><audio src=“https://raw.githubusercontent.com/harshitrnnh/self-voice-test-app/master/1.wav”>didn’t get your MP3 audio file</audio></speak>;
       break;
   } 
-//   let responseObj={
-//      "fulfillmentText":speech
-//     ,"fulfillmentMessages":[
-//         {
-//             "text": {
-//                 "text": [
-//                     speech
-//                 ]
-//             }
-//         }
-//     ]
-//     ,"source":""
-// }
   
  let responseObj={
   "payload": {
