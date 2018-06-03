@@ -51,8 +51,7 @@ restService.post("/audio", function(req, res) {
         "items":[
            {
               "simpleResponse":{
-                'textToSpeech': "some response",
-                 "displayText": "This is a SSML sample. Make sure your sound is enabled to hear the demo"
+                'textToSpeech': ""
               }
            },
            {
@@ -61,10 +60,6 @@ restService.post("/audio", function(req, res) {
                  "mediaObjects":[
                     {
                        "name":"Exercises",
-                      "largeImage":{
-                          "url":"http://res.freestockphotos.biz/pictures/17/17903-balloons-pv.jpg",
-                          "accessibilityText":"..."
-                       },
                        "contentUrl":"http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3"
                     }
                  ]
