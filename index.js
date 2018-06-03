@@ -46,7 +46,7 @@ restService.post("/audio", function(req, res) {
   
  let responseObj={
    
-{ "platform": "google",
+ "platform": "google",
   "type": "custom_payload",
   "payload": {
     "google": {
