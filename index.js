@@ -51,7 +51,7 @@ restService.post("/audio", function(req, res) {
         "items":[
            {
               "simpleResponse":{
-                'text_to_speech': "some response",
+                'textToSpeech': "some response",
                  "displayText": "This is a SSML sample. Make sure your sound is enabled to hear the demo"
               }
            },
