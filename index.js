@@ -46,10 +46,26 @@ restService.post("/audio", function(req, res) {
   
  let responseObj={
    
-
-              "ssml":speech,
+{ "platform": "google",
+  "type": "custom_payload",
+  "payload": {
+    "google": {
+      "expectUserResponse": false,
+   "isSsml": true,
+      "noInputPrompts": [],
+      "richResponse": {
+        "items": [
+          {
+            "simpleResponse": {
+              "ssml": speech,
               "displayText": "This is a SSML sample. Make sure your sound is enabled to hear the demo"
             }
+          }
+        ]
+      }
+    }
+  }
+}
 
  return res.json(responseObj);});
 
