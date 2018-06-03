@@ -51,7 +51,7 @@ restService.post("/audio", function(req, res) {
         "items":[
            {
               "simpleResponse":{
-                'textToSpeech': ""
+                'textToSpeech': "okay"
               }
            },
            {
