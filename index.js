@@ -53,7 +53,25 @@ restService.post("/audio", function(req, res) {
         "items":[
            {
               "simpleResponse":{
-                'ssml':"<speak><audio src=\"http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3\">your wave file</audio></speak>"
+                'ssml':"<speak>
+  <seq>
+    <media begin="0.5s">
+      <speak>Who invented the Internet?</speak>
+    </media>
+    <media begin="2.0s">
+      <speak>The Internet was invented by cats.</speak>
+    </media>
+    <media soundLevel="-6db">
+      <audio
+        src="https://actions.google.com/.../cartoon_boing.ogg"/>
+    </media>
+    <media repeatCount="3" soundLevel="+2.28dB"
+      fadeInDur="2s" fadeOutDur="0.2s">
+      <audio
+        src="https://actions.google.com/.../cat_purr_close.ogg"/>
+    </media>
+  </seq>
+</speak>"
               }
            },
            
