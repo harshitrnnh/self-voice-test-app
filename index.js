@@ -40,8 +40,8 @@ restService.post("/echo", function(req, res) {
 restService.post("/audio", function(req, res) {
   //var speech = req.body.queryResult.parameters.statement_num
   var speech = "";
-  var param = req.body.queryResult.parameters.statement_num;
-  if (param == "1"){speech = "found one";}
+  //var param = req.body.queryResult.parameters.statement_num;
+  //if (param == "1"){speech = "found one";}
   switch (req.body.queryResult.parameters.statement_num) {
     //Speech Synthesis Markup Language 
     case "1":
