@@ -61,40 +61,7 @@ restService.post("/audio", function(req, res) {
         '<audio src="https://actions.google.com/sounds/v1/cartoon/slide_whistle.ogg">did not get your audio file</audio>';
       break;
   } 
-  let responseObj={
-     "fulfillmentText":speech
-    ,"fulfillmentMessages":[
-        {
-            "text": {
-                "text": [
-                    speech
-                ]
-            }
-        }
-    ]
-    ,"source":""
-}
-  return res.json(responseObj);});
-//       let responseObj={
-//          "fulfillmentText":speech,
-//   "payload": {
-//     "google": {
-//       "expectUserResponse": true,
-//       "richResponse": {
-//         "items": [
-//           {
-//             "simpleResponse": {
-//               "ssml": speech,
-//               "displayText": "This is a SSML sample. Make sure your sound is enabled to hear the demo"
-//             }
-//           }
-//         ]
-//       }
-//     }
-//   }
-// }
-      
-//         let responseObj={
+//   let responseObj={
 //      "fulfillmentText":speech
 //     ,"fulfillmentMessages":[
 //         {
@@ -107,7 +74,25 @@ restService.post("/audio", function(req, res) {
 //     ]
 //     ,"source":""
 // }
- // return res.json(responseObj);});
+  
+ let responseObj={
+  "payload": {
+    "google": {
+      "expectUserResponse": true,
+      "richResponse": {
+        "items": [
+          {
+            "simpleResponse": {
+              "ssml": speech
+              "displayText": "This is a SSML sample. Make sure your sound is enabled to hear the demo"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+ return res.json(responseObj);});
 
 restService.post("/video", function(req, res) {
   return res.json({
