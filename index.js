@@ -45,23 +45,55 @@ restService.post("/audio", function(req, res) {
 //   } 
   
  let responseObj={
-  "payload": {
-    "google": {
-      "expectUserResponse": false,
-      "noInputPrompts": [],
-      "richResponse": {
-        "items": [
-          {
-            "simpleResponse": {
-              "ssml": speech,
-              "displayText": "This is a SSML sample. Make sure your sound is enabled to hear the demo"
-            }
-          }
+   
+     "google":{
+     "richResponse":{
+        "items":[
+           {
+              "simpleResponse":{
+                 "displayText": "This is a SSML sample. Make sure your sound is enabled to hear the demo"
+              }
+           },
+           {
+              "mediaResponse":{
+                 "mediaType":"AUDIO",
+                 "mediaObjects":[
+                    {
+                       "name":"Exercises",
+                       "contentUrl":"http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3"
+                    }
+                 ]
+              }
+           }
+        ],
+        "suggestions":[
+           {
+              "title":"chips"
+           }
         ]
-      }
-    }
+     }
   }
 }
+ 
+ 
+ 
+//   "payload": {
+//     "google": {
+//       "expectUserResponse": false,
+//       "noInputPrompts": [],
+//       "richResponse": {
+//         "items": [
+//           {
+//             "simpleResponse": {
+//               "ssml": speech,
+//               "displayText": "This is a SSML sample. Make sure your sound is enabled to hear the demo"
+//             }
+//           }
+//         ]
+//       }
+//     }
+//   }
+// }
 
  return res.json(responseObj);});
 
