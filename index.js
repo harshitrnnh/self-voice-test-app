@@ -60,6 +60,10 @@ restService.post("/audio", function(req, res) {
                  "mediaObjects":[
                     {
                        "name":"Exercises",
+                      "largeImage":{
+                          "url":"http://res.freestockphotos.biz/pictures/17/17903-balloons-pv.jpg",
+                          "accessibilityText":"..."
+                       },
                        "contentUrl":"http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3"
                     }
                  ]
