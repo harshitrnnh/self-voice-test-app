@@ -51,7 +51,7 @@ restService.post("/audio", function(req, res) {
         "items":[
            {
               "simpleResponse":{
-                'ssml':"<speak><audio src=\"https://actions.google.com/sounds/v1/alarms/winding_alarm_clock.ogg\">your wave file</audio></speak>"
+                'ssml':"<speak><audio src=\"http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3\">your wave file</audio></speak>"
               }
            },
            
