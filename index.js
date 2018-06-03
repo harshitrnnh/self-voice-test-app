@@ -62,6 +62,11 @@ restService.post("/audio", function(req, res) {
 }
  return res.json(responseObj);});
 
+// var port = process.env.PORT || 8000
+// server.listen(port, function() {
+//     console.log("App is running on port " + port);
+// });
+
 restService.listen(process.env.PORT || 8000, function() {
   console.log("Server up and listening");
 });
