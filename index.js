@@ -51,7 +51,8 @@ restService.post("/audio", function(req, res) {
         "items": [
           {
             "simpleResponse": {
-              "ssml": speech,
+              "ssml":"<speak><audio src=“https://actions.google.com/sounds/v1/animals/cat_purr_close.ogg”>didn’t get your MP3 audio file</audio></speak>"
+              ,
               "displayText": "This is a SSML sample. Make sure your sound is enabled to hear the demo"
             }
           }
