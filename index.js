@@ -44,18 +44,10 @@ restService.post("/audio", function(req, res) {
   } 
   
  let responseObj={
-    "fulfillmentText":speech
-    ,"fulfillmentMessages":[
-        {
-            "text": {
-                "text": [
-                    speech
-                ]
-            }
-        }
-    ]
+   
   "payload": {
     "google": {
+       "fulfillmentText":speech,
       "expectUserResponse": true,
       "richResponse": {
         "items": [
