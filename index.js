@@ -53,7 +53,8 @@ restService.post("/audio", function(req, res) {
         "items":[
            {
               "simpleResponse":{
-                "ssml":"<speak>
+                "ssml":"
+  <speak>
   <seq>
     <media begin="0.5s">
       <speak>Who invented the Internet?</speak>
