@@ -53,7 +53,7 @@ restService.post("/audio", function(req, res) {
         "items":[
            {
               "simpleResponse":{
-                "ssml":"<speak><seq><media begin=\"0s\"><audio src=\"https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg\"/><audio src=\"https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg\"/></media></seq></speak>"
+                "ssml":"<speak><seq><audio src=\"https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg\"/><audio src=\"https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg\"/></seq></speak>"
               }
            },
            
