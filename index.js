@@ -82,25 +82,6 @@ restService.post("/audio", function(req, res) {
 }
  }
  
- 
-//   "payload": {
-//     "google": {
-//       "expectUserResponse": false,
-//       "noInputPrompts": [],
-//       "richResponse": {
-//         "items": [
-//           {
-//             "simpleResponse": {
-//               "ssml": speech,
-//               "displayText": "This is a SSML sample. Make sure your sound is enabled to hear the demo"
-//             }
-//           }
-//         ]
-//       }
-//     }
-//   }
-// }
-
  return res.json(responseObj);});
 
 // var port = process.env.PORT || 8000
