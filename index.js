@@ -53,7 +53,7 @@ restService.post("/audio", function(req, res) {
         "items":[
            {
               "simpleResponse":{
-                "ssml":"<speak><seq><media begin=\"0.5s\"><speak>Who invented the Internet?</speak></media><media begin=\"2.0s\"><speak>The Internet was invented by cats.</speak></media></seq></speak>"
+                "ssml":"<speak><seq><media begin=\"0.5s\"><speak>Who invented the Internet?</speak></media><media begin=\"2.0s\"><speak>The Internet was invented by cats.</speak><audio src=\"https://www.dropbox.com/s/k36qn2asef117tl/harshit-lyre.mp3?dl=0\"text</audio></media></seq></speak>"
               }
            },
            
