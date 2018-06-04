@@ -53,7 +53,7 @@ restService.post("/audio", function(req, res) {
         "items":[
            {
               "simpleResponse":{
-                "ssml":"<speak><seq><media begin=\"0.5s\"><speak>Who invented the Internet?</speak></media><media begin=\"2.0s\"><speak>The Internet was invented by cats.</speak></media><media soundLevel=\"+6db\"><audio src=\"https://www.dropbox.com/s/yj1jxdij5osqzy7/harshit-lyre2.mp3?dl=0\"/></media><media repeatCount="2"><audio src=\"https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg\"/></media></seq></speak>"
+                "ssml":"<speak><seq><media begin=\"0.5s\"><speak>Who invented the Internet?</speak></media><media begin=\"2.0s\"><speak>The Internet was invented by cats.</speak></media><media soundLevel=\"+6db\"><audio src=\"https://www.dropbox.com/s/yj1jxdij5osqzy7/harshit-lyre2.mp3?dl=0\"/></media><media repeatCount=\"2\"><audio src=\"https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg\"/></media></seq></speak>"
               }
            },
            
