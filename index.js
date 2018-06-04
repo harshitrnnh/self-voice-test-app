@@ -53,7 +53,7 @@ restService.post("/audio", function(req, res) {
         "items":[
            {
               "simpleResponse":{
-                'ssml':"<speak>
+                "ssml":"<speak>
   <seq>
     <media begin="0.5s">
       <speak>Who invented the Internet?</speak>
@@ -63,12 +63,12 @@ restService.post("/audio", function(req, res) {
     </media>
     <media soundLevel="-6db">
       <audio
-        src="https://actions.google.com/.../cartoon_boing.ogg"/>
+        src="https://actions.google.com/sounds/v1/alarms/medium_bell_ringing_near.ogg"/>
     </media>
     <media repeatCount="3" soundLevel="+2.28dB"
       fadeInDur="2s" fadeOutDur="0.2s">
       <audio
-        src="https://actions.google.com/.../cat_purr_close.ogg"/>
+        src="https://actions.google.com/sounds/v1/alarms/medium_bell_ringing_near.ogg"/>
     </media>
   </seq>
 </speak>"
