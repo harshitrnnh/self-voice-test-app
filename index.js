@@ -2,6 +2,7 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
+var count_weather = 0;
 
 const restService = express();
 
@@ -29,17 +30,17 @@ restService.post("/echo", function(req, res) {
     ,"source":""
 }
   return res.json(responseObj);});
-
+  
 restService.post("/audio", function(req, res) {
   //var speech = req.body.queryResult.parameters.statement_num
   
 //   var string = "foo",
 //   substring = "weather";
-  
+ 
   
   var speech = "";
   var param = req.body.queryResult.parameters.userText;
-  var count_weather = 0;
+
   if (param.includes("weather")){
     count_weather+=1;
     console.log(count_weather);
