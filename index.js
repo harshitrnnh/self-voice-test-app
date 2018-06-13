@@ -47,7 +47,7 @@ restService.post("/audio", function(req, res) {
     if (count_weather ==1) {speech ="<speak><audio src=\"https://www.dropbox.com/s/gp4lam1dj2omjsh/weather-response.mp3?dl=1\"><desc></desc>Sounds great! The weather next week in that area will be around 18 to 23 degrees, a perfect weather for a trek.</audio></speak>";
                            }
 //     else if (count_weather==2){speech ="<speak><audio src=\"https://www.dropbox.com/s/30dhramv7uqmz3f/repeat.mp3?dl=1\"><desc></desc>Hello, Hal! I am going to trek in Manali after a couple of weeks. How’s the weather like there?</audio></speak>";}
-//                            }
+                            }
   else if (param.includes("hotels")){speech ="<speak><audio src=\"https://www.dropbox.com/s/ilkzhpd6y9wklyl/hotels-response.mp3?dl=1\"><desc></desc>Wonderful. Could you suggest some hotels to stay there?</audio></speak>";}
   else if (param.includes("essentials")){speech ="<speak><audio src=\"https://www.dropbox.com/s/qewbazti6hgaegf/essentials-response.mp3?dl=1\"><desc></desc>Thanks. There's a few essential items i'll have to carry. Could you add knife, flashlight, jacket to the essentials list?</audio></speak>";}
   else if (param.includes("preparatory")){speech ="<speak><audio src=\"https://www.dropbox.com/s/wjpfjpw4cczwqa0/preparatory-response.mp3?dl=1\"><desc></desc>Awesome! Are there any specific preparatory safety tips i should remember Hal?</audio></speak>";}
