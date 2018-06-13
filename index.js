@@ -40,10 +40,10 @@ restService.post("/audio", function(req, res) {
   var speech = "";
   var param = req.body.queryResult.parameters.userText;
   if (param.includes("weather")){speech ="<speak><audio src=\"https://www.dropbox.com/s/qquszbl6jcuhzjt/weather.mp3?dl=1\"<desc></desc>text</audio></speak>";}
-  else if (param.includes("hotels")){speech ="<speak>Here are <say-as interpret-as=\"characters\">SSML</say-as> samples. I can pause <break time=\"3\" />. I can play a sound <audio src=\"https://actions.google.com/sounds/v1/alarms/winding_alarm_clock.ogg\">your wave file</audio>. I can speak in cardinals. Your position is <say-as interpret-as=\"cardinal\">10</say-as> in line. Or I can speak in ordinals. You are <say-as interpret-as=\"ordinal\">10</say-as> in line. Or I can even speak in digits. Your position in line is <say-as interpret-as=\"digits\">10</say-as>. I can also substitute phrases, like the <sub alias=\"World Wide Web Consortium\">W3C</sub>. Finally, I can speak a paragraph with two sentences. <p><s>This is sentence one.</s><s>This is sentence two.</s></p></speak>"
-                                }
-  
-  else{speech="<speak>Here are <say-as interpret-as=\"characters\">SSML</say-as> samples.</speak>"}
+  else if (param.includes("hotels")){speech ="<speak><audio src=\"https://www.dropbox.com/s/uyaly9yhwdo8oi3/hotels.mp3?dl=1\"<desc></desc>text</audio></speak>";}
+  else if (param.includes("essentials")){speech ="<speak><audio src=\"https://www.dropbox.com/s/8hybrg2ngq25ncy/essentials-list.mp3?dl=1\"<desc></desc>text</audio></speak>";}
+  else if (param.includes("preparatory")){speech ="<speak><audio src=\"https://www.dropbox.com/s/ela9eq9eovnwy21/prepatory-tips.mp3?dl=1\"<desc></desc>text</audio></speak>";}
+  else{speech ="<speak><audio src=\"https://www.dropbox.com/s/30dhramv7uqmz3f/repeat.mp3?dl=0\"<desc></desc>text</audio></speak>";}
 //   switch (req.body.queryResult.parameters.statement_num) {
 //     //Speech Synthesis Markup Language 
 //     case "1":
