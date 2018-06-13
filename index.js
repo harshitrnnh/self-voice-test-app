@@ -42,6 +42,7 @@ restService.post("/audio", function(req, res) {
   var count_weather = 0;
   if (param.includes("weather")){
     count_weather+=1;
+    console.log(count_weather);
     if (count_weather ==1) {speech ="<speak><audio src=\"https://www.dropbox.com/s/qquszbl6jcuhzjt/weather.mp3?dl=1\"><desc></desc>Hello, Hal! I am going to trek in Manali after a couple of weeks. How’s the weather like there?</audio></speak>";
                            }
     else if (count_weather==2){speech ="<speak><audio src=\"https://www.dropbox.com/s/30dhramv7uqmz3f/repeat.mp3?dl=1\"><desc></desc>Hello, Hal! I am going to trek in Manali after a couple of weeks. How’s the weather like there?</audio></speak>";}
