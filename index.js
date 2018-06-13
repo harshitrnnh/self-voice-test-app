@@ -39,11 +39,13 @@ restService.post("/audio", function(req, res) {
   
   var speech = "";
   var param = req.body.queryResult.parameters.userText;
-  if (param.includes("weather")){speech ="<speak><audio src=\"https://www.dropbox.com/s/qquszbl6jcuhzjt/weather.mp3?dl=0\"><desc></desc>text</audio></speak>";}
-  else if (param.includes("hotels")){speech ="<speak><audio src=\"https://www.dropbox.com/s/uyaly9yhwdo8oi3/hotels.mp3?dl=0\"><desc></desc>essentials</audio></speak>";}
-  else if (param.includes("essentials")){speech ="<speak><audio src=\"https://www.dropbox.com/s/8hybrg2ngq25ncy/essentials-list.mp3?dl=1\"><desc></desc>essentials</audio></speak>";}
-  else if (param.includes("preparatory")){speech ="<speak><audio src=\"https://www.dropbox.com/s/ela9eq9eovnwy21/prepatory-tips.mp3?dl=1\"><desc></desc>prepatory</audio></speak>";}
-  else{speech ="<speak><audio src=\"https://www.dropbox.com/s/30dhramv7uqmz3f/repeat.mp3?dl=0\"><desc></desc>repeat</audio></speak>";}
+  if (param.includes("weather")){speech ="<speak><audio src=\"https://www.dropbox.com/s/qquszbl6jcuhzjt/weather.mp3?dl=1\"><desc></desc>Hello, Hal! I am going to trek in Manali after a couple of weeks. How’s the weather like there?	
+</audio></speak>";}
+  else if (param.includes("hotels")){speech ="<speak><audio src=\"https://www.dropbox.com/s/uyaly9yhwdo8oi3/hotels.mp3?dl=1\"><desc></desc>Wonderful. Could you suggest some hotels to stay there?	
+</audio></speak>";}
+  else if (param.includes("essentials")){speech ="<speak><audio src=\"https://www.dropbox.com/s/8hybrg2ngq25ncy/essentials-list.mp3?dl=1\"><desc></desc>Thanks. There's a few essential items i'll have to carry. Could you add knife, flashlight, jacket to the essentials list?</audio></speak>";}
+  else if (param.includes("preparatory")){speech ="<speak><audio src=\"https://www.dropbox.com/s/ela9eq9eovnwy21/prepatory-tips.mp3?dl=1\"><desc></desc>Awesome! Are there any specific preparatory safety tips i should remember Hal?</audio></speak>";}
+  else{speech ="<speak><audio src=\"https://www.dropbox.com/s/30dhramv7uqmz3f/repeat.mp3?dl=0\"><desc></desc>Sorry, i didn't hear that. Could you say that again?</audio></speak>";}
 //   switch (req.body.queryResult.parameters.statement_num) {
 //     //Speech Synthesis Markup Language 
 //     case "1":
