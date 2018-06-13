@@ -41,7 +41,7 @@ restService.post("/audio", function(req, res) {
   var speech = "";
   var param = req.body.queryResult.parameters.userText;
 
-  if (param.includes("weather")){
+  if (param.includes("weather"))
 //     count_weather+=1;
 //     console.log(count_weather);
     //if (count_weather == 1)
