@@ -39,7 +39,7 @@ restService.post("/audio", function(req, res) {
   
   var speech = "";
   var param = req.body.queryResult.parameters.userText;
-  if (param.includes("weather")){speech ="<speak><audio src=\"https://www.dropbox.com/s/qquszbl6jcuhzjt/weather.mp3?dl=1\"<desc></desc>text</audio></speak>";}
+  if (param.includes("weather")){speech ="<speak><seq><media begin=\"0.5s\"><speak>Who invented the Internet?</speak></media><media begin=\"2.0s\"><speak>The Internet was invented by cats.</speak><audio src=\"https://www.dropbox.com/s/k36qn2asef117tl/harshit-lyre.mp3?dl=1\"><desc></desc>text</audio><audio src=\"https://www.dropbox.com/s/k36qn2asef117tl/harshit-lyre2.mp3?dl=1\"><desc></desc>text</audio><audio src=\"https://www.dropbox.com/s/k36qn2asef117tl/harshit-lyre.mp3?dl=1\"><desc></desc>text</audio></media></seq></speak>";}
   else if (param.includes("hotels")){speech ="<speak><audio src=\"https://www.dropbox.com/s/uyaly9yhwdo8oi3/hotels.mp3?dl=1\"<desc></desc>text</audio></speak>";}
   else if (param.includes("essentials")){speech ="<speak><audio src=\"https://www.dropbox.com/s/8hybrg2ngq25ncy/essentials-list.mp3?dl=1\"<desc></desc>text</audio></speak>";}
   else if (param.includes("preparatory")){speech ="<speak><audio src=\"https://www.dropbox.com/s/ela9eq9eovnwy21/prepatory-tips.mp3?dl=1\"<desc></desc>text</audio></speak>";}
