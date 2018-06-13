@@ -52,7 +52,7 @@ restService.post("/audio", function(req, res) {
  let responseObj={
     "payload":{
      "google":{
-       "expectUserResponse": false,
+       "expectUserResponse": true,
       "noInputPrompts": [],
      "richResponse":{
         "items":[
