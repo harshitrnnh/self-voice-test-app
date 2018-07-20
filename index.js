@@ -50,8 +50,8 @@ restService.post("/audio", function(req, res) {
 //     else if (count_weather==2){speech ="<speak><audio src=\"https://www.dropbox.com/s/30dhramv7uqmz3f/repeat.mp3?dl=1\"><desc></desc>Hello, Hal! I am going to trek in Manali after a couple of weeks. How’s the weather like there?</audio></speak>";}
                             //}
   else if (param.includes("hotels")){speech ="<speak><audio src=\"https://www.dropbox.com/s/8getybtx1wtgg1b/jayati3-2.mp3?dl=1\"><desc></desc>Wonderful. Could you suggest some hotels to stay there?</audio></speak>";}
-  else if (param.includes("essentials")|| param.includes("Essentials")){speech ="<speak><audio src=\"https://www.dropbox.com/s/h6hz181he5asmz1/jayati4.mp3?dl=1\"><desc></desc>Thanks. There's a few essential items i'll have to carry. Could you add knife, flashlight, jacket to the essentials list?</audio></speak>";}
-  else if (param.includes("preparatory") || param.includes("Preparatory")){speech ="<speak><audio src=\"https://www.dropbox.com/s/td0a3havphqsek1/jayati5.mp3?dl=1\"><desc></desc>Awesome! Are there any specific preparatory safety tips i should remember Hal?</audio></speak>";}
+  else if (param.includes("essentials")|| param.includes("Essentials")){speech ="<speak><audio src=\"https://www.dropbox.com/s/h6348uq2zzedxmx/jayati4-2.mp3?dl=1\"><desc></desc>Thanks. There's a few essential items i'll have to carry. Could you add knife, flashlight, jacket to the essentials list?</audio></speak>";}
+  else if (param.includes("preparatory") || param.includes("Preparatory")){speech ="<speak><audio src=\"https://www.dropbox.com/s/rq0hkatyir28gqv/jayati5-2.mp3?dl=1\"><desc></desc>Awesome! Are there any specific preparatory safety tips i should remember Hal?</audio></speak>";}
   else{speech ="<speak><audio src=\"https://www.dropbox.com/s/5vkuau8v30t9oeg/jayati6.mp3?dl=1\"><desc></desc>Sorry, i didn't hear that. Could you say that again?</audio></speak>";}
 //   switch (req.body.queryResult.parameters.statement_num) {
 //     //Speech Synthesis Markup Language 
