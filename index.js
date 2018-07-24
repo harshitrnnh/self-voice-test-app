@@ -48,15 +48,15 @@ restService.post("/audio", function(req, res) {
   
   //else if (param.includes("yes") || param.includes("no") || param.includes("Yes") || param.includes("No")){speech ="<speak><audio src=\"https://www.dropbox.com/s/rpvvdanl6yutmu3/rishabhq4.mp3?dl=1\"><desc></desc>Sounds great! The weather next week in that area will be around 18 to 23 degrees, a perfect weather for a trek.</audio></speak>";}
   
-  else if (param.includes("weather")){speech ="<speak><audio src=\"https://www.dropbox.com/s/yjyy9sbgh8bu50z/saurabh2.mp3?dl=1\"><desc></desc>Sounds great! The weather next week in that area will be around 18 to 23 degrees, a perfect weather for a trek.</audio></speak>";}
+  else if (param.includes("weather")){speech ="<speak><audio src=\"https://www.dropbox.com/s/r3lxgpxfqukj3yb/rishabh2.mp3?dl=1\"><desc></desc>Sounds great! The weather next week in that area will be around 18 to 23 degrees, a perfect weather for a trek.</audio></speak>";}
   
-  else if (param.includes("hotels")|| param.includes("hotel") || param.includes("Hotels") || param.includes("Hotels")){speech ="<speak><audio src=\"https://www.dropbox.com/s/9gwy7b83hekhnve/saurabh3.mp3?dl=1\"><desc></desc>Wonderful. Could you suggest some hotels to stay there?</audio></speak>";}
+  else if (param.includes("hotels")|| param.includes("hotel") || param.includes("Hotels") || param.includes("Hotels")){speech ="<speak><audio src=\"https://www.dropbox.com/s/j4xrhrgh4af23y8/rishabh3.mp3?dl=1\"><desc></desc>Wonderful. Could you suggest some hotels to stay there?</audio></speak>";}
   
-  else if (param.includes("essentials")|| param.includes("Essentials") || param.includes("list") || param.includes("lists") || param.includes("essential") || param.includes("Essential")){speech ="<speak><audio src=\"https://www.dropbox.com/s/ov97m8olj0s48hn/saurabh4.mp3?dl=1\"><desc></desc>Thanks. There's a few essential items i'll have to carry. Could you add knife, flashlight, jacket to the essentials list?</audio></speak>";}
+  else if (param.includes("essentials")|| param.includes("Essentials") || param.includes("list") || param.includes("lists") || param.includes("essential") || param.includes("Essential")){speech ="<speak><audio src=\"https://www.dropbox.com/s/8btrxhwgbjwuzvc/rishabh4.mp3?dl=1\"><desc></desc>Thanks. There's a few essential items i'll have to carry. Could you add knife, flashlight, jacket to the essentials list?</audio></speak>";}
   
-  else if (param.includes("preparatory") || param.includes("Preparatory") || param.includes("predatory") || param.includes("Predatory")){speech ="<speak><audio src=\"https://www.dropbox.com/s/jdchqu23vasgr2n/saurabh5.mp3?dl=1\"><desc></desc>Awesome! Are there any specific preparatory safety tips i should remember Hal?</audio></speak>";}
+  else if (param.includes("preparatory") || param.includes("Preparatory") || param.includes("predatory") || param.includes("Predatory") || param.includes("proprietary") || param.includes("property")  || param.includes("safety") || param.includes("list")){speech ="<speak><audio src=\"https://www.dropbox.com/s/5b0shtktlgbbg88/rishabh5.mp3?dl=1\"><desc></desc>Awesome! Are there any specific preparatory safety tips i should remember Hal?</audio></speak>";}
   
-  else{speech ="<speak><audio src=\"https://www.dropbox.com/s/vxinipp3ngppy42/saurabh6.mp3?dl=1\"><desc></desc>Sorry, i didn't hear that. Could you say that again?</audio></speak>";}
+  else{speech ="<speak><audio src=\"https://www.dropbox.com/s/cprdwkqyfj2h3c6/rishabh6.mp3?dl=1\"><desc></desc>Sorry, i didn't hear that. Could you say that again?</audio></speak>";}
 //   switch (req.body.queryResult.parameters.statement_num) {
 //     //Speech Synthesis Markup Language 
 //     case "1":
