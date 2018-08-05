@@ -50,7 +50,7 @@ restService.post("/audio", function(req, res) {
   
   else if (param.includes("preparatory") || param.includes("Preparatory") || param.includes("predatory") || param.includes("Predatory") || param.includes("proprietary") || param.includes("property")  || param.includes("safety") || param.includes("list")){speech ="<speak>Don’t forget to book an insurance before your trek. Make sure you carry a first aid kit at all times. Always carry some spare energy food like trail nuts and protein bars. Most importantly, stay hydrated and have a blast. This ends our first session. Please bring an A4 sheet and pen next time.</speak>";}
   
-  else{speech ="<speak><audio src=\"https://www.dropbox.com/s/cprdwkqyfj2h3c6/rishabh6.mp3?dl=1\"><desc></desc>Sorry, i didn't hear that. Could you say that again?</audio></speak>";}
+  else{speech ="<speak>Sorry, i didn't hear that. Could you say that again?</audio></speak>";}
 //   switch (req.body.queryResult.parameters.statement_num) {
 //     //Speech Synthesis Markup Language 
 //     case "1":
