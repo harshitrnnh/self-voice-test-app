@@ -42,13 +42,13 @@ restService.post("/audio", function(req, res) {
   var param = req.body.queryResult.parameters.userText;
   
   
-  if (param.includes("weather")){speech ="<speak>Sounds great! The weather next week in that area will be around 18 to 23 degrees, a perfect weather for a trek.</speak>";}
+  if (param.includes("weather")){speech ="<speak>Sounds great! The weather next week in that area will be around 18 to 23 degrees, a perfect weather for a trek.</audio></speak>";}
   
-  else if (param.includes("hotels")|| param.includes("hotel") || param.includes("Hotels") || param.includes("Hotels")){speech ="<speak>Sure! There are a few hotels that I can suggest - Hotel Lakeview is a 4 star property, and Hotel Vintage is a three star property that is available next week. I will send you an email with a complete list.</speak>";}
+  else if (param.includes("hotels")|| param.includes("hotel") || param.includes("Hotels") || param.includes("Hotels")){speech ="<speak>Sure! There are a few hotels that I can suggest - Hotel Lakeview is a 4 star property, and Hotel Vintage is a three star property that is available next week. I will send you an email with a complete list.</audio></speak>";}
   
-  else if (param.includes("essentials")|| param.includes("Essentials") || param.includes("list") || param.includes("lists") || param.includes("essential") || param.includes("Essential")){speech ="<speak>Sure, i'll remember a list and remind you a few days before your travels.</speak>";}
+  else if (param.includes("essentials")|| param.includes("Essentials") || param.includes("list") || param.includes("lists") || param.includes("essential") || param.includes("Essential")){speech ="<speak>Sure, i'll remember a list and remind you a few days before your travels.</audio></speak>";}
   
-  else if (param.includes("preparatory") || param.includes("Preparatory") || param.includes("predatory") || param.includes("Predatory") || param.includes("proprietary") || param.includes("property")  || param.includes("safety") || param.includes("list")){speech ="<speak>Don’t forget to book an insurance before your trek. Make sure you carry a first aid kit at all times. Always carry some spare energy food like trail nuts and protein bars. Most importantly, stay hydrated and have a blast. This ends our first session. Please bring an A4 sheet and pen next time.</speak>";}
+  else if (param.includes("preparatory") || param.includes("Preparatory") || param.includes("predatory") || param.includes("Predatory") || param.includes("proprietary") || param.includes("property")  || param.includes("safety") || param.includes("list")){speech ="<speak>Don’t forget to book an insurance before your trek. Make sure you carry a first aid kit at all times. Always carry some spare energy food like trail nuts and protein bars. Most importantly, stay hydrated and have a blast. This ends our first session. Please bring an A4 sheet and pen next time.</audio></speak>";}
   
   else{speech ="<speak>Sorry, i didn't hear that. Could you say that again?</audio></speak>";}
 //   switch (req.body.queryResult.parameters.statement_num) {
