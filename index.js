@@ -44,7 +44,7 @@ restService.post("/audio", function(req, res) {
   
   if (param.includes("weather")){speech ="<speak><audio src=\"https://www.dropbox.com/s/ldt5awk7vh12k8i/2%20-%20Weather.mp3?dl=1\"><desc></desc>Sounds great! The weather next week in that area will be around 18 to 23 degrees, a perfect weather for a trek.</audio></speak>";}
   
-  else if (param.includes("hotels")|| param.includes("hotel") || param.includes("Hotels") || param.includes("Hotels")){speech ="<speak><audio src=\"https://www.dropbox.com/s/ldt5awk7vh12k8i/2%20-%20Weather.mp3?dl=1\"><desc></desc>Sure! There are a few hotels that I can suggest - Hotel Lakeview is a 4 star property, and Hotel Vintage is a three star property that is available next week. I will send you an email with a complete list.</audio></speak>";}
+  else if (param.includes("hotels")|| param.includes("hotel") || param.includes("Hotels") || param.includes("Hotels")){speech ="<speak><audio src=\"https://www.dropbox.com/s/4axboff17tz9w2h/3%20-%20Hotel.mp3?dl=1\"><desc></desc>Sure! There are a few hotels that I can suggest - Hotel Lakeview is a 4 star property, and Hotel Vintage is a three star property that is available next week. I will send you an email with a complete list.</audio></speak>";}
   
   else if (param.includes("essentials")|| param.includes("Essentials") || param.includes("list") || param.includes("lists") || param.includes("essential") || param.includes("Essential")){speech ="<speak><audio src=\"https://www.dropbox.com/s/omuto5a94yc95p1/4%20-%20List.mp3?dl=1\"><desc></desc>Sure, i'll remember a list and remind you a few days before your travels.</audio></speak>";}
   
